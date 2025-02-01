@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+/* Frame */
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+body{
+    font-family: Montserrat;
+    width: 100%;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo{
+    width: 30%;
+    text-align: center;
+    font-size: 90%;
+}
+
+.navigation{
+    width: 70%;
+    align-content: center;
+}
+
+.navigation ul{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Content */
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.introduction{
+    margin: 10%;
+    width: 50%;
+}
+
+.introduction p{
+    text-align: left;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.introduction p:nth-child(1){
+    font-size: 300%;
+    margin-bottom: 0;
+}
+
+.introduction p:nth-child(2){
+    margin: 0;
+    font-size: 150%;
+}
+
+.introduction p:nth-child(3){
+    margin-top: 2%;
+    font-size: 150%;
+}
+
+.portrait{
+    width: 50%;
+    padding: 4%;
+    align-content: center;
+}
+
+.portrait img{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Header */
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .navigation{
+        width: 100%;
+    }
+}
